@@ -13,6 +13,7 @@
         android:text="이름"/>
 
     <EditText
+        android:id="@+id/nameEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:singleLine="true"/>
@@ -28,12 +29,14 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/okBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="확인"/>
 
         <Button
+            android:id="@+id/cancelBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

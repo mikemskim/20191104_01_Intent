@@ -12,8 +12,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         nameInputBtn.setOnClickListener {
-            var intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            var intent = Intent(this, EditUserInfoActivity::class.java)
+//            startActivity(intent)
+            startActivityForResult(intent,1000)
         }
     }
 }
