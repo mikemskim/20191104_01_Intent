@@ -47,6 +47,13 @@ class MainActivity : AppCompatActivity() {
 //            var intent = Intent(Intent.ACTION_CALL, uri)
 //            startActivity(intent)
         }
+
+        smsBtn.setOnClickListener {
+            var uri = Uri.parse("smsto:01031247792")
+            var intent = Intent(Intent.ACTION_SENDTO, uri)
+            intent.putExtra("sms_body","작업오더 2000이 진행되었습니다.")
+            startActivity(intent)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
