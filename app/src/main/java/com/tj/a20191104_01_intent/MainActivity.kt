@@ -66,6 +66,12 @@ class MainActivity : AppCompatActivity() {
             var intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
+
+        googleMapBtn.setOnClickListener {
+            var uri = Uri.parse("geo:37.123,127.567") // 위도 값과 경도 값 대입
+            var intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
