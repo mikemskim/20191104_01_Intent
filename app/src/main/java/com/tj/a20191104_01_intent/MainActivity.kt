@@ -60,6 +60,12 @@ class MainActivity : AppCompatActivity() {
             var intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
+
+        storeLinkBtn.setOnClickListener {
+            var uri = Uri.parse("market://details?id=com.kakao.talk")
+            var intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
