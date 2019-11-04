@@ -54,6 +54,12 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("sms_body","작업오더 2000이 진행되었습니다.")
             startActivity(intent)
         }
+
+        webLinkBtn.setOnClickListener {
+            var uri = Uri.parse("http://naver.com")
+            var intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
