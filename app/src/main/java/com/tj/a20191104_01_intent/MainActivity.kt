@@ -41,6 +41,12 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
+
+        phoneCallBtn.setOnClickListener {
+//            var uri = Uri.parse("tel:01031247792")
+//            var intent = Intent(Intent.ACTION_CALL, uri)
+//            startActivity(intent)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
